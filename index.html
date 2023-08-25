@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Importar a biblioteca jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="painelPrincipal.js" defer></script>
+</head>
+
+<body class="mudarEstiloBodyImage" id="body">
+
+
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top cabecalhoPrincipal">
+      <div class="container-fluid cabecalhoPrincipal">
+        <div class="agrupIconETitulo">
+          <img class="iconCabecalho" src="./farmacia (1).png" alt="">
+          <a class="navbar-brand tituloMenu " id="linkCentralAtendimentos" href="#">Hospital Santa Mônica</a>
+        </div>
+        <button id="btnMenuCabecalho" class="navbar-toggler btnMenu " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title tituloMenuSuspenso" id="offcanvasNavbarLabel">Hospital Santa Mônica</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body containerPaiCabecalhoBootstrap">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link links" id="idNovoPaciente" href="#">Novo Paciente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" id="idEditarPaciente" href="#">Editar Nome Paciente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" id="idVerificarPaciente" href="#">Verificar Atendimento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" id="idCriacaoPainelPrincipal" href="#">Painel Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" id="idAreaMedica" href="#">Área Médica</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="home">
+
+      <div class="ApresentacaoHome">
+        <div class="tituloApresentacao">
+          <h2 class="h2ApresentacaoHome">Faça agora <br> sua consulta</h2>
+          <p class="paragrafoApresentacaoHome">Navegue pelo nosso site para explorar os serviços médicos de <br> excelência que oferecemos</p>
+          <div class="caixaAlinhamentoBotoes">
+            <button id="botaoConsultaSobreNos"  class="botaoApresentacaoHome">Consulta</button>
+            <button id="sobreNosHome" class="botaoApresentacaoHome">Sobre nós</button>
+          </div>
+        </div>
+        <div class="alinhamentoImagem">
+          <img class="imagemApresentacao" src="Group 35 (6).png" alt="">
+        </div>
+      </div>
+      <div class="apresentacaoIcons">
+        <h2 class="h2ApresentacaoIcons">Especialidades mais procuradas</h2>
+        <div class="iconsPai">
+          <div class="icons">
+            <img  class="icon1" src="IconOnda.png" alt="">
+            <p class="paragrafoIcons">Exames</p>
+          </div>
+          <div class="icons">
+            <img  class="icon1" src="IconOnda2.png" alt="">
+            <p class="paragrafoIcons">Maternidade</p>
+          </div>
+          <div class="icons">
+            <img  class="icon1" src="IconOnda3.png" alt="">
+            <p class="paragrafoIcons">Cardiologista</p>
+          </div>
+        </div>
+      </div>
+
+      <section id="sessaoSobreNosHome" class="caixaPaiTitulosSobreNos"  >
+                <h2 class="h2SobreNos">Sobre nós</h2>
+                <h3 class="h3SobreNos">Confira um pouco sobre a história, conquistas e valores do HSM</h3>
+            <div class="subSessaoLinhaTempoOne">
+
+             
+                <div class="linhaTempoPai">
+                    <div class="sobreNosimg"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="50"   fill="currentColor" class="bi bi-check-circle imgCheckSobreNosWhite" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                      </svg></div>
+                    <div class="subSessaoLinhaTempo"></div>
+                </div>
+              
+                <div class="caixaSobrenos1">
+                  <div class="imagensSobreNos">
+                    <img class="imagensSobreNosFilho1" src="Group 37 (5).png" alt="">
+                  </div>
+                    <div class="sessaoTextoLinhaTempo1">
+                      <p class="tituloFaseSobrenos">Inicio</p>
+                      <p class="paragrafoSobreNos">Começamos em 2013 e hoje contamos com <span class="paragrafoSublinhado">mais de 13 mil pacientes</span> em nosso Hospital.</p>
+                    </div>
+                </div>
+        </section>
+                
+            <div  class="subSessaoLinhaTempoTwo">
+                <div class="linhaTempoPai">
+                    <div class="sobreNosimg"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="50"   fill="currentColor" class="bi bi-check-circle imgCheckSobreNosBlue" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                      </svg></div>
+                    <div class="subSessaoLinhaTempo"></div>
+                </div>
+                <div class="caixaSobrenos1">
+                  <div class="imagensSobreNos">
+                    <img class="imagensSobreNosFilho1" src="Group 37.png" alt="">
+                  </div>
+                    <div class="sessaoTextoLinhaTempo2">
+                      <p class="tituloFaseSobrenos">Especialização</p>
+                      <p class="paragrafoSobreNos">Contamos com diversos serviços especializados para  <span class="paragrafoSublinhado">toda família.</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="subSessaoLinhaTempoThree">
+                <div class="linhaTempoPai">
+                    <div class="sobreNosimg"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="50"   fill="currentColor" class="bi bi-check-circle imgCheckSobreNosWhite" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                      </svg></div>
+                    <div class="subSessaoLinhaTempo"></div>
+                </div>
+                <div class="caixaSobrenos1">
+                  <div class="imagensSobreNos">
+                    <img class="imagensSobreNosFilho1" src="Group 37 (3).png" alt="">
+                  </div>
+                    <div class="sessaoTextoLinhaTempo1">
+                      <p class="tituloFaseSobrenos">Profissionais</p>
+                      <p class="paragrafoSobreNos">Nosso profissionais são os <span class="paragrafoSublinhado">mais capacitado</span> para cuidar de você.</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="subSessaoLinhaTempoFour">
+                <div class="linhaTempoPai">
+                    <div class="sobreNosimg"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="50"   fill="currentColor" class="bi bi-check-circle imgCheckSobreNosBlue" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                      </svg></div>
+                    <div class="subSessaoLinhaTempo"></div>
+                </div>
+                <div class="caixaSobrenos1">
+                  <div class="imagensSobreNos">
+                    <img class="imagensSobreNosFilho1" src="Group 37 (4).png" alt="">
+                  </div>
+                    <div class="sessaoTextoLinhaTempo2">
+                      <p class="tituloFaseSobrenos">Atendimento</p>
+                      <p class="paragrafoSobreNos">Aqui o seu atendimento é totalmente <span class="paragrafoSublinhado">ágil e rápido.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="sessaoOqueDizemSobrenosPrincipal">
+          <article class="titulos_comentarios">
+            <h2 class="h2RelatoCLiente">O que os clientes Dizem</h2>
+            <h3 class="h3RelatoCLiente">Clientes que assim como você, se interessaram pelos nossos serviços e logo <br> ficaram satisfeitas!</h3>
+        </article>
+            <div class="alinhaElementosOqueDizemSobreNosVerso">
+              <div class="sessaoDeRelatos">
+                <p class="paragrafoRelatoPaciente">"Fiquei satisfeito com a eficiência dos serviços oferecidos pelo HSM. Os exames e testes foram realizados rapidamente, sem nenhum contratempo.  A equipe de enfermagem comprovou um alto nível de <span class="paragrafoSublinhado">competência e cuidado </span>  todo o processo."</p>
+                <p class="paragrafoIdentificacaoPaciente">Rodrigo Goes, paciente HSM</p>
+              </div>
+              <div class="imagensPacientes">
+                <img class="imagemRelato" src="Vector (4).png" alt="">
+              </div>
+            </div>
+
+            <div class="alinhaElementosOqueDizemSobreNosReverso">
+              <div class="sessaoDeRelatos">
+                <p class="paragrafoRelatoPaciente">"O ambiente do hospital é moderno e acolhedor, transmitindo uma sensação de conforto e tranquilidade. Fiquei impressionado com a precisão das <span class="paragrafoSublinhado">instalações e a tecnologia </span> de ponta utilizada nos diagnósticos e tratamentos."</p>
+                <p class="paragrafoIdentificacaoPaciente">Júlia Maria, paciente HSM</p>
+              </div>
+              <div class="imagensPacientes">
+                <img class="imagemRelato" src="Vector (7).png" alt="">
+              </div>
+            </div>
+
+            <div class="alinhaElementosOqueDizemSobreNosVerso">
+              <div class="sessaoDeRelatos">
+                <p class="paragrafoRelatoPaciente">"A dedicação dos profissionais do <span class="paragrafoSublinhado"> Hospital Santa Mônica </span> foi além do esperado. Durante o período de recuperação, meu familiar recebeu cuidados contínuos e monitoramento próximo para garantir sua recuperação ideal."</p>
+                <p class="paragrafoIdentificacaoPaciente">Paolla, filha da paciente HSM</p>
+              </div>
+              <div class="imagensPacientes">
+                <img class="imagemRelato" src="Vector (9).png" alt="">
+              </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+          <div class="rodapeContato">
+            <h2 class="h3Rodape">Entre em contato <br> conosco!</h2>
+            <p class="paragrafoRodape">Entre em contato com o HSM <br> para tirar suas <span class="paragrafoSublinhado"> dúvidas </span>e contar suas
+                <br> sugestões.</p>
+            <a class="rodapeBtn"  href="https://api.whatsapp.com/send?phone=984152703" target="_blank"><img src="whatsapp 1.png" alt=""> Entre em contato</a>
+            <img class="logoRodape" src="farmacia (1).png" alt="">
+            <p class="paragrafoRodape">©2023 Hospital Santa Mônica</p>
+            <p class="paragrafoRodape">Todos os direitos reservados.</p>
+        </div>
+        <div class="rodapeLocalizacao">
+          <p class="paragrafoRodape">65 98415-2703</p>
+          <p class="paragrafoRodape">Av. Luís Philippe Pereira Leite, S/N - Bairro Alvorada</p>
+          <p class="paragrafoRodape">contato@hospitalsantamonica.com</p>
+        </div>
+        </div>
+      
+
+    </div>
+    <div id="painelPacientes"></div>
+    <div id="cadastrarPaciente"></div>
+    <div id="editarPaciente"></div>
+    <!-- Modal 1 -->
+
+    <div class="modal fade modal1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Escolha o Status</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer">
+            <button id="btnPreferencialModal" type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Prefencial</button>
+            <button id="btnNormalModal" type="button" class="btn btn-primary" data-bs-dismiss="modal">Normal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="verificarAtendimento"></div>
+
+    <div id="verificarStatus"></div>
+
+    <div id="retornoPainelLink"></div>
+
+    <div class="areaMedica" id="loginAreaMedica"></div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Status</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Selecione o status do paciente atual</p>
+          </div>
+          <div class="modal-footer">
+            <button id="btnPreferencialModalEditarStatus" type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Preferencial</button>
+            <button id="btnNormalModalEditarStatus" type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Normal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Modal -->
+ 
+</body>
+
+</html>
